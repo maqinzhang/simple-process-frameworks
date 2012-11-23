@@ -7,7 +7,7 @@ import java.util.Map;
 
 import org.springframework.stereotype.Service;
 
-import com.jd.frameworks.processframework.bind.annotations.Attribute;
+import com.simple.frameworks.processframework.bind.annotations.Attribute;
 import com.simple.orders.payment.result.PaymentResult;
 import com.simple.orders.payment.result.RequestResultModel;
 import com.simple.orders.payment.result.PaymentResultCode;

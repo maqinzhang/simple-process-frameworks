@@ -3,7 +3,7 @@
  */
 package com.simple.orders.payment.service;
 
-import com.jd.frameworks.processframework.request.Request;
+import com.simple.frameworks.processframework.request.Request;
 import com.simple.orders.payment.result.NotifyResultModel;
 import com.simple.orders.payment.result.RequestResultModel;
 import com.simple.orders.payment.result.ReturnResultModel;

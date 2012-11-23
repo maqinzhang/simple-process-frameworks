@@ -5,10 +5,10 @@ package com.simple.orders.payment.logic;
 
 import org.springframework.stereotype.Service;
 
-import com.jd.frameworks.processframework.bind.annotations.Attribute;
-import com.jd.frameworks.processframework.bind.annotations.RequestVar;
-import com.jd.frameworks.processframework.result.Result;
-import com.jd.frameworks.processframework.utils.StringUtils;
+import com.simple.frameworks.processframework.bind.annotations.Attribute;
+import com.simple.frameworks.processframework.bind.annotations.RequestVar;
+import com.simple.frameworks.processframework.result.Result;
+import com.simple.frameworks.processframework.utils.StringUtils;
 import com.simple.orders.payment.domain.ServiceProviderDomain;
 import com.simple.orders.payment.result.PaymentResult;
 import com.simple.orders.payment.result.PaymentResultCode;
