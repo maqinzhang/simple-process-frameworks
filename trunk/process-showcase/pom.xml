@@ -3,10 +3,10 @@
 	<modelVersion>4.0.0</modelVersion>
 	<parent>
 		<artifactId>ProcessFramework</artifactId>
-		<groupId>com.jd.frameworks</groupId>
+		<groupId>com.simple.frameworks</groupId>
 		<version>0.0.1-SNAPSHOT</version>
 	</parent>
-	<groupId>com.jd.frameworks</groupId>
+	<groupId>com.simple.frameworks</groupId>
 	<artifactId>process-showcase</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>war</packaging>
@@ -414,12 +414,12 @@
 			<artifactId>cxf-common-utilities</artifactId>
 		</dependency>
 		<dependency>
-			<groupId>com.jd.frameworks</groupId>
+			<groupId>com.simple.frameworks</groupId>
 			<artifactId>process-core</artifactId>
 			<version>0.0.1-SNAPSHOT</version>
 		</dependency>
 		<dependency>
-			<groupId>com.jd.frameworks</groupId>
+			<groupId>com.simple.frameworks</groupId>
 			<artifactId>process-spring</artifactId>
 			<version>0.0.1-SNAPSHOT</version>
 		</dependency>
