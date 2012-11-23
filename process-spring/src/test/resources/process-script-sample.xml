@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<processes>
+    <import resource="classpath:process*-sample.xml" />
+	<process id="scriptConfigErrorService">
+		<try>
+			<node id="scriptErrorConfigLogic" />
+		</try>
+		<finally>
+			<node id="printlnInfo" />
+		</finally>
+	</process>
+	<process id="scriptSimpleService">
+		<try>
+			<node id="scriptLogic" /><!-- 
+			<node id="attibuteBinding" /> -->
+		</try>
+		<finally>
+			<node id="printlnInfo" />
+		</finally>
+	</process>
+</processes>

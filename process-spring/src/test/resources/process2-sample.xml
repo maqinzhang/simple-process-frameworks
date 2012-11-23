@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<processes>
+	<process id="invokerNoTryService">
+		<node id="logic1" />
+		<node id="logic2" class="com.test.logic.TestLogic2" />
+	</process>
+	<process id="invokerFinalService">
+	   <try>
+		<node id="logic1" />
+		<node id="logic2" class="com.test.logic.TestLogic2" />
+	   </try>
+	   <finally>
+			<node id="printlnInfo" />
+		</finally>
+	</process>
+	<process id="invokerService">
+		<try>
+			<node id="logic1" />
+			<node id="logic2" class="com.test.logic.TestLogic2" />
+		</try>
+		<catch exception="java.lang.Exception">
+			<node id="logicException1" />
+		</catch>
+		<finally>
+			<node id="logicFinally" />
+		</finally>
+	</process>
+	<process id="invokerService2">
+		<try>
+			<node id="logic1" />
+			<node id="logic2" class="com.test.logic.TestLogic2" />
+		</try>
+		<catch exception="java.lang.RuntimeException">
+			<node id="logicException1" />
+		</catch> 
+		<catch exception="java.lang.Exception">
+			<node id="logicException1" />
+		</catch> 		
+	</process>
+	<process id="invokerService3">
+		<try>
+			<node id="logic1" />
+			<node id="logic2" class="com.test.logic.TestLogic2" />
+		</try>
+		<catch exception="java.lang.Exception">
+			<node id="logicException1" />
+		</catch>
+		<finally>
+			<node id="logicFinally" />
+		</finally>
+	</process>
+</processes>

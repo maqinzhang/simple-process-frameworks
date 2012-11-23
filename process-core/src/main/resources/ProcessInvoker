@@ -1,0 +1,67 @@
+/**
+ * 
+ */
+package com.jd.frameworks.processframework.invoke;
+
+import java.util.List;
+
+import com.jd.frameworks.processframework.ExceptionHandler;
+import com.jd.frameworks.processframework.Node;
+import com.jd.frameworks.processframework.ProcessHolder;
+import com.jd.frameworks.processframework.SubProcess;
+
+/**
+ * @author luolishu
+ * 
+ */
+@SuppressWarnings("rawtypes")
+public class DefaultProcessInvoker0 implements ProcessInvoker {
+	private ProcessHolder processHolder;
+	
+	private ExceptionHandler exceptionHandler;
+
+	public DefaultProcessInvoker0(ProcessHolder processHolder,
+			ExceptionHandler exceptionHandler) {
+		this.processHolder = processHolder;
+		this.exceptionHandler = exceptionHandler;
+	}
+
+	/*
+	 * (non-Javadoc)
+	 * 
+	 * @see com.jd.frameworks.processframework.invoke.ProcessInvoker#invoke()
+	 */
+	@SuppressWarnings("unchecked")
+	public Object invoke() {
+		Object result = null;
+		try {
+			SubProcess mainProcess = processHolder.getMainProcess();
+			result = this.invokeProcess(mainProcess);
+		} catch (Throwable e) {
+			SubProcess exceptionProcess = processHolder.getExceptionProcess(e
+					.getClass());
+			result = this.invokeProcess(exceptionProcess);
+		} finally {
+			try {
+				SubProcess finallProcess = processHolder.getMainProcess();
+				result = this.invokeProcess(finallProcess);
+			} catch (Exception e) {
+				result = exceptionHandler.handle(e);
+			}
+		}
+		return result;
+	}
+
+	private Object invokeProcess(SubProcess subProcess) {
+		List<Node> nodes = subProcess.getNodes();
+		if (nodes == null) {
+			return null;
+		}
+		for (Node node : nodes) {
+			if (node.validate()) {
+				node.execute();
+			}
+		}
+		return null;
+	}
+}
