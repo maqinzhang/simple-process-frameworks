@@ -9,8 +9,8 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 
-import com.jd.frameworks.processframework.invoke.ProcessInvoker;
-import com.jd.frameworks.processframework.result.Result;
+import com.simple.frameworks.processframework.invoke.ProcessInvoker;
+import com.simple.frameworks.processframework.result.Result;
 
 /**
  * @author luolishu

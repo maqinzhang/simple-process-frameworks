@@ -5,9 +5,9 @@ package com.simple.process.showcase;
 
 import org.springframework.stereotype.Service;
 
-import com.jd.frameworks.processframework.Execute;
-import com.jd.frameworks.processframework.result.DefaultResult;
-import com.jd.frameworks.processframework.result.Result;
+import com.simple.frameworks.processframework.Execute;
+import com.simple.frameworks.processframework.result.DefaultResult;
+import com.simple.frameworks.processframework.result.Result;
 
 /**
  * @author luolishu

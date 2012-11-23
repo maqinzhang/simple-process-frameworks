@@ -16,7 +16,7 @@
 	<context:component-scan base-package="com.simple.process" />
 	
 	<!-- <bean
-		class="com.jd.frameworks.processframework.spring.config.ProcessLoaderScannerConfigurer">
+		class="com.simple.frameworks.processframework.spring.config.ProcessLoaderScannerConfigurer">
 		<property name="locations" value="classpath:process-*-sample.xml" />
 
 	</bean> --> 
