@@ -3,10 +3,10 @@
 	<modelVersion>4.0.0</modelVersion>
 	<parent>
 		<artifactId>ProcessFramework</artifactId>
-		<groupId>com.jd.frameworks</groupId>
+		<groupId>com.simple.frameworks</groupId>
 		<version>0.0.1-SNAPSHOT</version>
 	</parent>
-	<groupId>com.jd.frameworks</groupId>
+	<groupId>com.simple.frameworks</groupId>
 	<artifactId>process-core</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<dependencies>
