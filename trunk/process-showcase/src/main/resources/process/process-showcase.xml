@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<processes>
+	<!-- 提交支付记录处理流程 -->
+	<process id="helloServiceInvoker">
+		<!-- 加载支付接口提供者配置 -->
+		<node id="helloWorld" /> 
+	</process> 
+</processes>
