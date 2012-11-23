@@ -1,7 +1,7 @@
 /**
  * 
  */
-package com.jd.frameworks.processframework.spring.config;
+package com.simple.frameworks.processframework.spring.config;
  
 import java.util.LinkedHashSet;
 import java.util.Set;
@@ -17,18 +17,18 @@ import org.springframework.core.io.support.PathMatchingResourcePatternResolver;
 import org.springframework.core.io.support.ResourcePatternResolver;
 import org.w3c.dom.Element;
 
-import com.jd.frameworks.processframework.config.ConfigurationManager;
-import com.jd.frameworks.processframework.config.ProcessConfig;
-import com.jd.frameworks.processframework.exception.DefaultExceptionHandler;
-import com.jd.frameworks.processframework.exception.ExceptionHandler;
-import com.jd.frameworks.processframework.factory.ObjectFactory;
-import com.jd.frameworks.processframework.invoke.ClassGenerator;
-import com.jd.frameworks.processframework.invoke.ExecutionNode;
-import com.jd.frameworks.processframework.invoke.JavassistClassGenerator;
-import com.jd.frameworks.processframework.invoke.ProcessHolder;
-import com.jd.frameworks.processframework.invoke.SubProcess;
-import com.jd.frameworks.processframework.spring.factory.SpringObjectFactory;
-import com.jd.frameworks.processframework.utils.StringUtils;
+import com.simple.frameworks.processframework.config.ConfigurationManager;
+import com.simple.frameworks.processframework.config.ProcessConfig;
+import com.simple.frameworks.processframework.exception.DefaultExceptionHandler;
+import com.simple.frameworks.processframework.exception.ExceptionHandler;
+import com.simple.frameworks.processframework.factory.ObjectFactory;
+import com.simple.frameworks.processframework.invoke.ClassGenerator;
+import com.simple.frameworks.processframework.invoke.ExecutionNode;
+import com.simple.frameworks.processframework.invoke.JavassistClassGenerator;
+import com.simple.frameworks.processframework.invoke.ProcessHolder;
+import com.simple.frameworks.processframework.invoke.SubProcess;
+import com.simple.frameworks.processframework.spring.factory.SpringObjectFactory;
+import com.simple.frameworks.processframework.utils.StringUtils;
 
 /**
  * @author luolishu

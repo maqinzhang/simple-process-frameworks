@@ -1,10 +1,10 @@
-package com.jd.frameworks.processframework.spring.factory;
+package com.simple.frameworks.processframework.spring.factory;
  
 import org.springframework.beans.factory.BeanFactory; 
 
-import com.jd.frameworks.processframework.config.NodeConfig;
-import com.jd.frameworks.processframework.factory.DefaultObjectFactory;
-import com.jd.frameworks.processframework.utils.Assert;
+import com.simple.frameworks.processframework.config.NodeConfig;
+import com.simple.frameworks.processframework.factory.DefaultObjectFactory;
+import com.simple.frameworks.processframework.utils.Assert;
 
 /**
  * @author luolishu

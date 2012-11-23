@@ -1,7 +1,7 @@
 /**
  * 
  */
-package com.jd.frameworks.processframework.spring.config;
+package com.simple.frameworks.processframework.spring.config;
 
 import org.springframework.beans.BeansException;
 import org.springframework.beans.factory.xml.NamespaceHandlerSupport;
