@@ -1,7 +1,7 @@
 /**
  * 
  */
-package com.jd.frameworks.processframework.spring.config;
+package com.simple.frameworks.processframework.spring.config;
 
 import java.util.Collections;
 import java.util.HashSet;
@@ -13,12 +13,12 @@ import org.springframework.core.io.support.ResourcePatternResolver;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 
-import com.jd.frameworks.processframework.config.ConfigurationException;
-import com.jd.frameworks.processframework.config.DefaultConfigurationManager;
-import com.jd.frameworks.processframework.config.ProcessConfig;
-import com.jd.frameworks.processframework.spring.converter.SpringTypeConverter;
-import com.jd.frameworks.processframework.utils.StringUtils;
-import com.jd.frameworks.processframework.utils.xml.DomUtils;
+import com.simple.frameworks.processframework.config.ConfigurationException;
+import com.simple.frameworks.processframework.config.DefaultConfigurationManager;
+import com.simple.frameworks.processframework.config.ProcessConfig;
+import com.simple.frameworks.processframework.spring.converter.SpringTypeConverter;
+import com.simple.frameworks.processframework.utils.StringUtils;
+import com.simple.frameworks.processframework.utils.xml.DomUtils;
 
 /**
  * @author luolishu

@@ -1,7 +1,7 @@
 /**
  * 
  */
-package com.jd.frameworks.processframework.spring.converter;
+package com.simple.frameworks.processframework.spring.converter;
 
 import java.lang.reflect.Method;
 
@@ -9,7 +9,7 @@ import org.springframework.beans.SimpleTypeConverter;
 import org.springframework.beans.TypeConverter;
 import org.springframework.core.MethodParameter;
 
-import com.jd.frameworks.processframework.converter.InjectTypeConverter;
+import com.simple.frameworks.processframework.converter.InjectTypeConverter;
 
 /**
  * @author luolishu
@@ -22,7 +22,7 @@ public class SpringTypeConverter implements InjectTypeConverter {
 	 * (non-Javadoc)
 	 * 
 	 * @see
-	 * com.jd.frameworks.processframework.invoke.TypeConverter#convertIfNecessary
+	 * com.simple.frameworks.processframework.invoke.TypeConverter#convertIfNecessary
 	 * (java.lang.Object, java.lang.Class)
 	 */
 	@Override

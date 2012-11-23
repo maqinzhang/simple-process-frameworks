@@ -1,7 +1,7 @@
 /**
  * 
  */
-package com.jd.frameworks.processframework.spring.config;
+package com.simple.frameworks.processframework.spring.config;
 
 import static org.springframework.util.Assert.notNull;
 
@@ -25,17 +25,17 @@ import org.springframework.context.ConfigurableApplicationContext;
 import org.springframework.context.annotation.ClassPathBeanDefinitionScanner;
 import org.springframework.util.StringUtils;
 
-import com.jd.frameworks.processframework.config.ConfigurationManager; 
-import com.jd.frameworks.processframework.config.ProcessConfig;
-import com.jd.frameworks.processframework.exception.DefaultExceptionHandler;
-import com.jd.frameworks.processframework.exception.ExceptionHandler;
-import com.jd.frameworks.processframework.factory.ObjectFactory;
-import com.jd.frameworks.processframework.invoke.ClassGenerator;
-import com.jd.frameworks.processframework.invoke.ExecutionNode;
-import com.jd.frameworks.processframework.invoke.JavassistClassGenerator;
-import com.jd.frameworks.processframework.invoke.ProcessHolder;
-import com.jd.frameworks.processframework.invoke.SubProcess;
-import com.jd.frameworks.processframework.spring.factory.SpringObjectFactory;
+import com.simple.frameworks.processframework.config.ConfigurationManager;
+import com.simple.frameworks.processframework.config.ProcessConfig;
+import com.simple.frameworks.processframework.exception.DefaultExceptionHandler;
+import com.simple.frameworks.processframework.exception.ExceptionHandler;
+import com.simple.frameworks.processframework.factory.ObjectFactory;
+import com.simple.frameworks.processframework.invoke.ClassGenerator;
+import com.simple.frameworks.processframework.invoke.ExecutionNode;
+import com.simple.frameworks.processframework.invoke.JavassistClassGenerator;
+import com.simple.frameworks.processframework.invoke.ProcessHolder;
+import com.simple.frameworks.processframework.invoke.SubProcess;
+import com.simple.frameworks.processframework.spring.factory.SpringObjectFactory;
 
 /**
  * @author luolishu
@@ -44,7 +44,7 @@ import com.jd.frameworks.processframework.spring.factory.SpringObjectFactory;
 public class ProcessLoaderScannerConfigurer implements
 		BeanDefinitionRegistryPostProcessor, InitializingBean,
 		ApplicationContextAware, BeanNameAware {
-	private final String basePackage = "com.jd.frameworks.processframework.invoke";
+	private final String basePackage = "com.simple.frameworks.processframework.invoke";
 	private String beanName;
 	private String locations[];
 	
