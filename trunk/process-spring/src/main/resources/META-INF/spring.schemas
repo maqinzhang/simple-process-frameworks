@@ -1,2 +1,2 @@
-http\://www.360buy.com/schema/process/process-3.0.xsd=com/jd/frameworks/processframework/spring/config/process-3.0.xsd
+http\://www.simple-process.org/schema/process/process-3.0.xsd=com/simple/frameworks/processframework/spring/config/process-3.0.xsd
  
