@@ -7,7 +7,7 @@ import java.util.List;
 
 import org.springframework.stereotype.Service;
 
-import com.jd.frameworks.processframework.result.Result;
+import com.simple.frameworks.processframework.result.Result;
 import com.simple.orders.payment.domain.PaymentParameterDomain;
 import com.simple.orders.payment.domain.ServiceProviderDomain;
 import com.simple.orders.payment.result.PaymentResult;

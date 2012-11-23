@@ -7,9 +7,9 @@ import javax.annotation.Resource;
 
 import org.springframework.stereotype.Service;
 
-import com.jd.frameworks.processframework.invoke.ProcessInvoker;
-import com.jd.frameworks.processframework.request.Request;
-import com.jd.frameworks.processframework.result.Result;
+import com.simple.frameworks.processframework.invoke.ProcessInvoker;
+import com.simple.frameworks.processframework.request.Request;
+import com.simple.frameworks.processframework.result.Result;
 import com.simple.orders.payment.result.NotifyResultModel;
 import com.simple.orders.payment.result.RequestResultModel;
 import com.simple.orders.payment.result.ReturnResultModel;

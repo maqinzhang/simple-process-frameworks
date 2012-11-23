@@ -3,7 +3,7 @@
  */
 package com.simple.orders.payment.result;
 
-import com.jd.frameworks.processframework.result.Result;
+import com.simple.frameworks.processframework.result.Result;
 
 /**
  * @author luolishu
