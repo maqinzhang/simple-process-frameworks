@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<processes>
-	<process id="simpleTestService">
-		<node id="validationOnlyLogic" />
-		<node id="executionOnlyLogic" />
-	</process>
-</processes>

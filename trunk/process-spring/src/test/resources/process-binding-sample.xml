@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<processes>
-	<process id="bindingTestService">
-		<node id="requestBinding" />
-		<node id="attibuteBinding" />
-	</process>
-</processes>
