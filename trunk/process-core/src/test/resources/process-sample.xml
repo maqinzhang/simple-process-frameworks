@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<processes>
+	<process id="invokerNoTryService" interface="">
+		<if test="session.getAttribute('abc')==1">
+			<node id="logic1" class="com.test.logic.TestLogic1" />
+		</if>
+		<elseif test="session.getAttribute('abc')==2">
+			<node id="logic1" class="com.test.logic.TestLogic2" />
+		</elseif>
+		<else>
+			<node id="logic1" class="com.test.logic.TestLogic3" />
+		</else>
+	</process>
+	<process id="invokerNoTryService" interface="">
+		<choose>
+			<when test="session.getAttribute('abc')==1">
+				<node id="logic1" class="com.test.logic.TestLogic1" />
+			</when>
+			<when test="session.getAttribute('abc')==2">
+				<node id="logic1" class="com.test.logic.TestLogic2" />
+			</when>
+			<otherwise>
+				<node id="logic1" class="com.test.logic.TestLogic3" />
+			</otherwise>
+		</choose>
+	</process>
+
+	<process id="invokerService" resultType="">
+		<try>
+			<node id="logic1" class="com.test.logic.TestLogic1" />
+			<node id="logic2" class="com.test.logic.TestLogic2" />
+			<try>
+				<node id="logic1" class="com.test.logic.TestLogic3" />
+			</try>
+			<catch exception="java.lang.Exception">
+				<node id="logicException1" class="com.test.logic.TestLogic4" />
+			</catch>
+		</try>
+		<catch exception="java.lang.Exception">
+			<node id="logicException1" class="com.test.logic.TestLogic4" />
+		</catch>
+		<finally>
+			<node id="logicFinally" class="com.test.logic.TestLogic5" />
+		</finally>
+	</process>
+	<process id="invokerService2" resultType="">
+		<try>
+			<node id="logic1" class="com.test.logic.TestLogic1" />
+			<node id="logic2" class="com.test.logic.TestLogic2" />
+		</try>
+		<catch exception="java.lang.Exception">
+			<node id="logicException1" class="com.test.logic.TestLogic3" />
+		</catch>
+		<finally>
+			<node id="logicFinally" class="com.test.logic.TestLogic5" />
+		</finally>
+	</process>
+	<process id="invokerService3" interface="com.showcase.SayHelloService">
+		<try>
+			<if test="session.getAttribute('abc')==1">
+				<node id="logic1" class="com.test.logic.TestLogic1" />
+			</if>
+			<elseif test="session.getAttribute('abc')==2">
+				<node id="logic1" class="com.test.logic.TestLogic2" />
+			</elseif>
+			<else>
+				<node id="logic1" class="com.test.logic.TestLogic3" />
+				<try>
+					<node id="logic1" class="com.test.logic.TestLogic5" />
+				</try>
+				<catch exception="java.lang.Exception">
+					<node id="logicException1" class="com.test.logic.TestLogic4" />
+				</catch>
+			</else>
+			<node id="logic2" class="com.test.logic.TestLogic2" />
+			<try>
+				<node id="logic1" class="com.test.logic.TestLogic3" />
+			</try>
+			<catch exception="java.lang.Exception">
+				<node id="logicException1" class="com.test.logic.TestLogic4" />
+			</catch>
+		</try>
+		<catch exception="java.lang.Exception">
+			<node id="logicException1" class="com.test.logic.TestLogic4" />
+		</catch>
+		<finally>
+			<node id="logicFinally" class="com.test.logic.TestLogic5" />
+		</finally>
+	</process>
+</processes>
