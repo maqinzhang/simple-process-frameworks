@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<processes>
+	<!-- 提交支付记录处理流程 -->
+	<process id="helloServiceInvoker" interface="com.simple.process.service.HelloWorldService">
+		<node id="processStart" />
+		<!-- 加载支付接口提供者配置 -->
+		<if test="request.getParameter('name')=='xiaoming'">
+			<node id="sayHelloToXiaoMing" />
+		</if>
+		<elseif test="request.getParameter('name')=='xiaohua'">
+			<node id="sayHelloToXiaoHua" />
+		</elseif>
+		<else>
+			<node id="sayHelloWorld" />
+		</else>
+		<node id="exceptionShowStart" />
+		<try>
+			<node id="tryNode" />
+			<node id="throwExceptionNode" />
+		</try>
+		<catch exception="com.simple.process.exception.SampleException">
+			<node id="exceptionHanlder" />
+		</catch>
+		<finally>
+			<node id="finallyHandler" />
+		</finally>
+		<node id="exceptionShowEnd" />
+		<node id="moreComplexShowStart" />
+		<if test="request.getParameter('age')>20">
+			<if test="request.getParameter('age')>30">
+				<node id="ageBiggerThan30" />
+			</if>
+			<else>
+				<node id="ageBetween20And30" />
+			</else>
+			<try>
+				<node id="sayHelloWorld" />
+				<if test="request.getParameter('age')>100">
+					<node id="throwExceptionNode" />
+				</if>
+			</try>
+			<catch exception="com.simple.process.exception.SampleException">
+				<node id="exceptionHanlder" />
+			</catch>
+		</if>
+		<node id="moreComplexShowEnd" />
+	</process>
+</processes>
