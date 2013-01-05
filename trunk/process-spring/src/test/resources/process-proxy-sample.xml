@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<processes> 
+	<process id="invokerTryFinalService" interface="com.opensource.frameworks.simple.proxy.ProxyInterface">
+	   <node id="proxyLogic1" /> 	    
+	</process> 
+</processes>
