@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<processes> 
+	<process id="invokerTryFinalService">
+	   <try>
+		<node id="logic1" />
+		<node id="logic2" class="com.test.logic.TestLogic2" />
+	   </try>
+	   <finally>
+			<node id="printlnInfo" />
+		</finally>
+	</process> 
+</processes>
