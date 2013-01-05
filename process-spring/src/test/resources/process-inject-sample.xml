@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<processes>
-	<process id="injectTestService">
-		<node id="injectLogic" /> 
-	</process>
-</processes>
