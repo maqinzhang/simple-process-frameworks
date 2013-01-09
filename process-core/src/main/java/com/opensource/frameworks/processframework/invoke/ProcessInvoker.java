@@ -3,6 +3,7 @@
  */
 package com.opensource.frameworks.processframework.invoke;
 
+import com.opensource.frameworks.processframework.ExecuteContext;
 import com.opensource.frameworks.processframework.request.Request;
 import com.opensource.frameworks.processframework.result.Result;
 
@@ -16,5 +17,7 @@ public interface ProcessInvoker {
 	 * @return
 	 */
 	public Result<?,?> invoke(Request request);
+	
+	public Result<?,?> forward(ExecuteContext context);
 
 }

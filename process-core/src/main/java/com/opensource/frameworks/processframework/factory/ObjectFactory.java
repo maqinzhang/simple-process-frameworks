@@ -16,5 +16,7 @@ public interface ObjectFactory {
 	public Object buildNode(NodeConfig config); 
 	
 	public ProcessHolder buildProcessHolder(ProcessConfig config);
+	
+	public Object getObject(String id);
 
 }

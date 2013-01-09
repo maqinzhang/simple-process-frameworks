@@ -13,4 +13,6 @@ import com.opensource.frameworks.processframework.Script;
 public interface ScriptExecutorFactory {
 
 	public ScriptExecutor create(Script ann);
+	
+	public ScriptExecutor create(String language);
 }
