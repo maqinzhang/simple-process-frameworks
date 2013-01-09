@@ -62,6 +62,11 @@ public class DefaultObjectFactory implements ObjectFactory {
 		}
 	}
 	@Override
+	public Object getObject(String id) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+	@Override
 	public ProcessHolder buildProcessHolder(ProcessConfig config) {
 		DefaultProcessHolder holder = new DefaultProcessHolder();
 		holder.id = config.id; 
@@ -147,4 +152,6 @@ public class DefaultObjectFactory implements ObjectFactory {
 		}
 
 	}
+
+	
 }

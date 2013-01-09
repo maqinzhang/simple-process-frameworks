@@ -25,6 +25,8 @@ public abstract class TagParserFactory {
 		register("finally", FinallyTagParser.class);
 		register("choose", ChooseTagParser.class);
 		register("process", ProcessParser.class);
+		register("script", ScriptTagParser.class);
+		register("forward", ScriptTagParser.class);
 	}
 
 	public static TagParser getParser(Element e) {

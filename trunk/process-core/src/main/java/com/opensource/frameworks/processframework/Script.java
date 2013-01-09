@@ -6,15 +6,25 @@ import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
 import java.lang.annotation.Target;
 
-@Target({ElementType.METHOD})
+@Target({ ElementType.METHOD })
 @Retention(RetentionPolicy.RUNTIME)
 @Documented
 public @interface Script {
-	ScriptTypes value()default ScriptTypes.JAVASCRIPT;	
-	String function()default "";
-	
-	public static enum ScriptTypes{
-		JAVASCRIPT,
-		GROOVY;		
+	ScriptTypes value() default ScriptTypes.JAVASCRIPT;
+
+	String function() default "";
+
+	public static enum ScriptTypes {
+		JAVASCRIPT, GROOVY;
+
+		public static ScriptTypes getType(String value) {
+			for (ScriptTypes item : values()) {
+				if (item.name().equalsIgnoreCase(value)) {
+					return item;
+				}
+			}
+			throw new IllegalArgumentException("language=" + value
+					+ " is not support!");
+		}
 	}
 }

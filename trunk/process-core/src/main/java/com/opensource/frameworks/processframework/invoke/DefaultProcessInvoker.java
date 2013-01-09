@@ -62,6 +62,20 @@ public class DefaultProcessInvoker implements ProcessInvoker {
 		return result;
 	}
 
+	@Override
+	public Result<?, ?> forward(ExecuteContext context) {
+		Object value = null;
+		try {
+			value = invocation.invoke((WrapperExecuteContext) context);
+		} catch (Throwable e) {
+			e.printStackTrace();
+		}
+		if (value != null && value instanceof Result) {
+			return (Result) value;
+		}
+		return context.result;
+	}
+
 	protected Result<?, ?> doInvoke(Request request) throws Throwable {
 		Object value = null;
 		WrapperExecuteContext wrapperContext = null;
@@ -75,7 +89,7 @@ public class DefaultProcessInvoker implements ProcessInvoker {
 			 * .build(this.processHolder.getProcessConfig()); } }
 			 */
 			value = invocation.invoke(wrapperContext);
-		} catch (Exception e) {
+		} catch (Throwable e) {
 			e.printStackTrace();
 		}
 		if (value != null && value instanceof Result) {
