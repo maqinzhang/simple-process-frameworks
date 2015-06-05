@@ -1,5 +1,6 @@
 # simple-process-frameworks
 Automatically exported from code.google.com/p/simple-process-frameworks
+
 QQ交流群74914061
 
 框架简介
@@ -121,6 +122,7 @@ simple-process-frameworks是一套简单的流程业务处理框架，用于解�
   2.返回Result或者throw Exception则直接结束当前流程的执行(假如没有在try...catch中)
 * execute为默认的执行方法
   1.返回Result或者throw Exception则直接结束当前流程的执行(假如没有在try...catch中)
+
 public class ValidationShow {
 
         public boolean validate() {
@@ -132,11 +134,13 @@ public class ValidationShow {
         }
 }
 代码实现示例2(注解的方式)：
+
 * validate为默认校验方法
   1.返回true则执行execute方法，否则不执行
   2.返回Result或者throw Exception则直接结束当前流程的执行(假如没有在try...catch中)
 * execute为默认的执行方法
   1.返回Result或者throw Exception则直接结束当前流程的执行(假如没有在try...catch中)
+
 public class ValidationAnnotaiontShow {
         /**
          * use @Validate annotation to defined a validate method
@@ -159,4 +163,6 @@ public class ValidationAnnotaiontShow {
                 System.out.println("use annotation support");
         }
 }
+
+
 欢迎大家加入交流和讨论
