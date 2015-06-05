@@ -142,6 +142,7 @@ public class ValidationShow {
   1.返回Result或者throw Exception则直接结束当前流程的执行(假如没有在try...catch中)
 
 public class ValidationAnnotaiontShow {
+        
         /**
          * use @Validate annotation to defined a validate method
          * 
@@ -152,6 +153,7 @@ public class ValidationAnnotaiontShow {
         public boolean method1(@RequestVar("name") String name) {
                 return true;
         }
+        
         /**
          * use @Execute annotation to defined a execute method
          * 
